@@ -14,20 +14,9 @@ struct InspirationAppApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(appModel)
+            Areas()
         }
-
-        ImmersiveSpace(id: appModel.immersiveSpaceID) {
-            ImmersiveView()
-                .environment(appModel)
-                .onAppear {
-                    appModel.immersiveSpaceState = .open
-                }
-                .onDisappear {
-                    appModel.immersiveSpaceState = .closed
-                }
-        }
-        .immersionStyle(selection: .constant(.full), in: .full)
+        .windowStyle(.plain)
+        
     }
 }
