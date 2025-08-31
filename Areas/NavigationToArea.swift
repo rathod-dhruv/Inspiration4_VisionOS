@@ -30,7 +30,7 @@ struct NavigationToArea: View {
                         }
                         else if area == Area.equipment
                         {
-                            
+                            EquipmentArea()
                         }
                         
                     } label: {

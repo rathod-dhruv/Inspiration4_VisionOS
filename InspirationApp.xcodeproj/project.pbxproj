@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		185363592E6407220001B1EA /* EquipmentArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185363582E6407220001B1EA /* EquipmentArea.swift */; };
+		1853635C2E64B93A0001B1EA /* CapsuleRealityArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1853635B2E64B93A0001B1EA /* CapsuleRealityArea.swift */; };
+		1853635E2E64B97E0001B1EA /* FullRocketRealityArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1853635D2E64B97E0001B1EA /* FullRocketRealityArea.swift */; };
 		18BB13FD2E5EBD0600E4C8E7 /* Crew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BB13FC2E5EBD0600E4C8E7 /* Crew.swift */; };
 		18BB13FF2E5EBE1500E4C8E7 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BB13FE2E5EBE1500E4C8E7 /* ViewModel.swift */; };
 		18BB14012E5EBED300E4C8E7 /* NavigationToArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BB14002E5EBED300E4C8E7 /* NavigationToArea.swift */; };
-		18BB14032E5EC07A00E4C8E7 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BB14022E5EC07A00E4C8E7 /* File.swift */; };
+		18BB14032E5EC07A00E4C8E7 /* Area.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BB14022E5EC07A00E4C8E7 /* Area.swift */; };
 		18E004452E5E97E80054D913 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 18E004442E5E97E80054D913 /* RealityKitContent */; };
 		18E0045C2E5E98970054D913 /* Areas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E0045B2E5E98970054D913 /* Areas.swift */; };
 		18E2581C2E63D58C00A374F2 /* CrewArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E2581B2E63D58400A374F2 /* CrewArea.swift */; };
@@ -19,10 +21,12 @@
 
 /* Begin PBXFileReference section */
 		185363582E6407220001B1EA /* EquipmentArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentArea.swift; sourceTree = "<group>"; };
+		1853635B2E64B93A0001B1EA /* CapsuleRealityArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleRealityArea.swift; sourceTree = "<group>"; };
+		1853635D2E64B97E0001B1EA /* FullRocketRealityArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullRocketRealityArea.swift; sourceTree = "<group>"; };
 		18BB13FC2E5EBD0600E4C8E7 /* Crew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crew.swift; sourceTree = "<group>"; };
 		18BB13FE2E5EBE1500E4C8E7 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		18BB14002E5EBED300E4C8E7 /* NavigationToArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationToArea.swift; sourceTree = "<group>"; };
-		18BB14022E5EC07A00E4C8E7 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		18BB14022E5EC07A00E4C8E7 /* Area.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Area.swift; sourceTree = "<group>"; };
 		18E0043F2E5E97E80054D913 /* InspirationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InspirationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E004432E5E97E80054D913 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		18E0045B2E5E98970054D913 /* Areas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Areas.swift; sourceTree = "<group>"; };
@@ -62,12 +66,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1853635A2E64B8E20001B1EA /* RealityViews */ = {
+			isa = PBXGroup;
+			children = (
+				1853635B2E64B93A0001B1EA /* CapsuleRealityArea.swift */,
+				1853635D2E64B97E0001B1EA /* FullRocketRealityArea.swift */,
+			);
+			path = RealityViews;
+			sourceTree = "<group>";
+		};
 		18BB13FA2E5EBBFD00E4C8E7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				18BB13FE2E5EBE1500E4C8E7 /* ViewModel.swift */,
 				18BB13FC2E5EBD0600E4C8E7 /* Crew.swift */,
-				18BB14022E5EC07A00E4C8E7 /* File.swift */,
+				18BB14022E5EC07A00E4C8E7 /* Area.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -75,6 +88,7 @@
 		18E004362E5E97E80054D913 = {
 			isa = PBXGroup;
 			children = (
+				1853635A2E64B8E20001B1EA /* RealityViews */,
 				18BB13FA2E5EBBFD00E4C8E7 /* Model */,
 				18E0045D2E5E98AD0054D913 /* Areas */,
 				18E004412E5E97E80054D913 /* InspirationApp */,
@@ -187,9 +201,11 @@
 			files = (
 				18E0045C2E5E98970054D913 /* Areas.swift in Sources */,
 				185363592E6407220001B1EA /* EquipmentArea.swift in Sources */,
+				1853635C2E64B93A0001B1EA /* CapsuleRealityArea.swift in Sources */,
 				18E2581C2E63D58C00A374F2 /* CrewArea.swift in Sources */,
 				18BB14012E5EBED300E4C8E7 /* NavigationToArea.swift in Sources */,
-				18BB14032E5EC07A00E4C8E7 /* File.swift in Sources */,
+				18BB14032E5EC07A00E4C8E7 /* Area.swift in Sources */,
+				1853635E2E64B97E0001B1EA /* FullRocketRealityArea.swift in Sources */,
 				18BB13FF2E5EBE1500E4C8E7 /* ViewModel.swift in Sources */,
 				18BB13FD2E5EBD0600E4C8E7 /* Crew.swift in Sources */,
 			);

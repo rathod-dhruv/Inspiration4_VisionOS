@@ -26,11 +26,11 @@ struct EquipmentArea: View {
                 Toggle(model.isShowingRocketCapsule ? "Hide Rocket Capsule (Volumetric)" : "Show Rocket Capsule (Volumetric)", isOn:$model.isShowingRocketCapsule)
                     .onChange(of: model.isShowingRocketCapsule){ _, isShowing in
                         if isShowing{
-                            
+                            openWindow(id: "CapsuleRealityArea")
                         }
                         else
                         {
-                            
+                            dismissWindow(id: "CapsuleRealityArea")
                         }
                     }
                     .toggleStyle(.button)
@@ -46,11 +46,15 @@ struct EquipmentArea: View {
                 Toggle(model.isShowingFullRocket ? "Hide Full Rocket (Immersed)" : "Show Full Rocket (Immersed)", isOn:$model.isShowingFullRocket)
                     .onChange(of: model.isShowingFullRocket){ _, isShowing in
                         if isShowing{
-                            
+                            Task {
+                                await openImmersiveSpace(id: "FullRocketRealityArea")
+                            }
                         }
                         else
                         {
-                            
+                            Task {
+                                await dismissImmersiveSpace()
+                            }
                         }
                     }
                     .toggleStyle(.button)
@@ -64,5 +68,5 @@ struct EquipmentArea: View {
 
 #Preview {
     EquipmentArea()
-        .environment(ViewModel())
+           .environment(ViewModel())
 }
