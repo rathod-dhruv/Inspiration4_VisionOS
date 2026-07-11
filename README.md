@@ -4,7 +4,7 @@ VisionOS_SwiftLearning — A small Swift-based repository for learning and exper
 
 ## About
 
-This repository contains Swift source code and examples focused on visionOS development and Swift learning. It is intended as a learning/experimental project rather than a production app.
+This repository contains Swift source code and examples focused on visionOS development and Swift learning. It is intended as a learning/experimental project rather than a production app. 
 
 ## Requirements
 
